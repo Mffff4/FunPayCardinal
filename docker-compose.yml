@@ -1,0 +1,11 @@
+services:
+  funpay-cardinal:
+    build: .
+    container_name: funpay-cardinal
+    restart: unless-stopped
+    env_file: .env
+    volumes:
+      - ./configs:/usr/src/app/configs
+      - ./logs:/usr/src/app/logs
+      - ./storage:/usr/src/app/storage
+      - ./plugins:/usr/src/app/plugins
