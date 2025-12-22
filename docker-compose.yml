@@ -5,7 +5,7 @@ services:
     restart: unless-stopped
     env_file: .env
     volumes:
-      - ./configs:/usr/src/app/configs
-      - ./logs:/usr/src/app/logs
-      - ./storage:/usr/src/app/storage
-      - ./plugins:/usr/src/app/plugins
+      - ../files/configs:/usr/src/app/configs
+      - ../files/logs:/usr/src/app/logs
+      - ../files/storage:/usr/src/app/storage
+      - ../files/plugins:/usr/src/app/plugins
